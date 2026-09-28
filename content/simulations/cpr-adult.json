@@ -1,0 +1,27 @@
+{
+  "id": "cpr-adult",
+  "title": "Adult CPR",
+  "area": "Medical Simulation",
+  "description": "Respond to an adult who has collapsed and is not responding.",
+  "actions": [
+    {"id": "check_scene_safety", "label": "Check the scene is safe"},
+    {"id": "check_responsiveness", "label": "Tap shoulders and shout to check response"},
+    {"id": "call_emergency", "label": "Call emergency services"},
+    {"id": "check_breathing", "label": "Check for normal breathing"},
+    {"id": "start_compressions", "label": "Start chest compressions"},
+    {"id": "give_rescue_breaths", "label": "Give rescue breaths"},
+    {"id": "use_aed", "label": "Attach and follow the AED"},
+    {"id": "give_water", "label": "Give the person water"},
+    {"id": "move_victim", "label": "Move the person without checking"},
+    {"id": "leave_scene", "label": "Leave to find help"}
+  ],
+  "steps": [
+    {"id": "s1", "instruction": "Make sure the area is safe for you and the casualty.", "action": "check_scene_safety", "points": 10, "hint": "Look for traffic, fire, or electrical hazards."},
+    {"id": "s2", "instruction": "Check whether the person responds.", "action": "check_responsiveness", "points": 10, "hint": "Tap the shoulders firmly and speak loudly."},
+    {"id": "s3", "instruction": "Get emergency help on the way.", "action": "call_emergency", "points": 10, "hint": "Send someone else if others are present."},
+    {"id": "s4", "instruction": "Check whether the person is breathing normally.", "action": "check_breathing", "points": 10, "hint": "Look, listen, and feel for no more than ten seconds."},
+    {"id": "s5", "instruction": "Begin chest compressions.", "action": "start_compressions", "points": 20, "hint": "Centre of the chest, hard and fast."},
+    {"id": "s6", "instruction": "Give rescue breaths after the compressions.", "action": "give_rescue_breaths", "points": 20, "hint": "Tilt the head back and lift the chin."},
+    {"id": "s7", "instruction": "Use the defibrillator as soon as it arrives.", "action": "use_aed", "points": 20, "hint": "Follow the voice prompts."}
+  ]
+}
